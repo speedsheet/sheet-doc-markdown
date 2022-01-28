@@ -2,7 +2,96 @@
 <b>Find what you need, faster.<>
 
 
+<table><col>Bold		<><col><c>** **
+__ __		<><><col><c>**<v><b>bold text<><>**
+__<v><b>bold text<><>__<><>
+<col> <>
+<col>Italics		<><col><c>* *
+_ _		<><><col><c>*<v><i>italics text<><>*
+_<v><i>italics text<><>_<><>
+<col> <>
+<col>Strikethrough		<><col><c>~~ ~~<><><col><c>~~<v><->strikethrough<><>~~<><>
+<col> <>
+<col>Inline Code<><col><c>` `<><><col><c>`<v>code<>`<><>
+<col> <>
+<col>Checkbox<><col><c>[ ]
+[x]<><><col><c>[ ] Unchecked
+[x] Checked<><>
+<col> <>
+<col>Escape<><col><c>\\<><><col><c>\\<v>*<><><>
+<col> <>
+<col>Image<><col><c>![]()<><><col><c>![<v>alt-text<>](<v>url<>)<><>
+<col>Link<><col><c>[]()<><><col><c>![<v>label<>](<v>url<>)<><>
+<col> <>
+<col>Headings<><col><c>#
+\##
+\###
+\####
+\#####
+\######<><><col><c># <v>Heading<>
+\## <v>Heading<>
+\### <v>Heading<>
+\#### <v>Heading<>
+\##### <v>Heading<>
+\###### <v>Heading<><><>
+<col> <>
+<col>List / Unordered<><col><c>*
+-<><><col><c>* <v>Item<>
+* <v>Item<><><>
+<col> <>
+<col>List / Ordered<><col><c>1.<><><col><c>1. <v>Item 1<>
+2. <v>Item 2<><><>
+<col> <>
+<col>Code Block<><col>``` ```<><col><c>```
+<v>code<>
+```<><>
+<col> <><col> <>
+<col>Panel Block<><col>TAB
+4 Spaces<><col>	<c><in><v>Indented Panel<><><><>
+<col> <>
+<col>Quote Block<><col><c>>
+>><><><col>> <v>Quoted Text<>
+>> <v>Double Quoted Text<><>
+<col> <><>
+
+
 # Syntax
+
+
+### Block - Code Block
+
+<cb>```
+<v>Code<>
+```<>
+
+
+Create a code block with a triple back tick (`).
+@
+@ Code
+
+
+
+### Block - Panel
+
+<cb>	<v>Tabbed Text In Panel<><>
+
+
+Indent with a TAB or 4 spaces.
+@
+@ Code
+
+
+
+### Block - Quoted	
+
+<cb>><v>Quoted Block<>
+
+>><v>Double Quoted Block<><>
+
+
+Create a quoted block with <c>><>.
+@
+@ Code
 
 
 
@@ -43,7 +132,12 @@ Use <c>#<> to <c>######<>
 
 ### Image
 
-<cb>![<v>Image Label<>](<v>file_name.png<>)<>
+<cb>![<v>Alt Text<>](<v>file_name.png<>)<>
+
+
+Inserts an image to your markdown.
+@
+@ ![]()
 
 
 
@@ -51,15 +145,14 @@ Use <c>#<> to <c>######<>
 
 <cb>[<v>https://url<>]<>
 
-Labeled Link
+Labeled Link:
 
 <cb>[<v>Label<>](<v>https://url<>)<>
 
 
-Github - Yes
-MacDown - No
+Inserts a link to your markdown.
 @
-@ url, web address, link
+@ url, web address, link, []()
 
 
 
@@ -78,21 +171,43 @@ Numbers before the '.' do not need to be sequential or in order.
 ### List - Unordered (Bullets)
 
 <cb>* <v>Item One<>
-* <v>Item Two<>
-<v>...<><>
+* <v>Item Two<><>
 
-Use <c>+<>
+<cb>- <v>Item One<>
+- <v>Item Two<><>
+
+Use <c>*<> or <c>-<> and a space at the start of the line.
 @
 @ Bullet points
 
 
 
-### New Line
+### List - Nested
 
-<cb><v>Line one.  
-Line two, after new line.<><>
+<cb>* <v>Item 1<>
+	* <v>Item 1.1<>
+		* <v>Item 1.1.1<><>
 
-Double Space at end of line one '  '.
+<cb>1. <v>Item 1<>
+	1. <v>Item 1.1<>
+		1. <v>Item 1.1.1<><>
+
+Indent with a tab or 4 spaces.
+@
+@ Bullet points, numbered, unordered, ordered
+
+
+
+### Newline
+
+<cb><v>Line 1 
+Line 2<><>
+
+<card><v>Line 1<> + 2 Spaces + Newline + <v>Line 2<><>
+
+Add double space at end of line 1 ('  ').
+@
+@ new line
 
 
 
@@ -105,15 +220,13 @@ Double Space at end of line one '  '.
 
 
 
-### Text - Emphasis / Bold
+### Text - Bold
 
-<cb>*<v>Emphasis<>*<>
+<cb>**<v>Bold<>**
 
-Bold:
+__<v>Bold<>__<>
 
-<cb>**<v>Strong Emphasis<>**<>
-
-Surround Text With *
+Surround text with a double asterisk (**) or double underscore (__).
 
 
 
@@ -125,23 +238,13 @@ Surround with Back Quote `
 
 
 
-### Tex - Italic
+### Text - Italic
 
-<cb>_<v>In Italics<>_<>
+<cb>_<v>In Italics<>_
 
-Surround with Underscore _
+*<v>In Italics<>*<>
 
-
-
-
-### Text - Panel	
-
-<cb>	<v>Tabbed Text In Panel<><>
-
-
-Indent with a TAB
-@
-@ Code
+Surround with a single underscore (_) or asterisk (*).
 
 
 
@@ -151,5 +254,28 @@ Indent with a TAB
 
 Surround with Double ~
 
+
+
+### Table
+
+<cb>| <v>heading<> | <v>heading<> |
+| ------- | ------- |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+# Github 
+
+
+### Github - Light Theme
+
+<cb>![GitHub Light](https://github.com/github-light.png#gh-dark-mode-only)<>
+
+
+
+### Github - Dark Theme
+
+<cb>![GitHub Dark](https://github.com/github-dark.png#gh-light-mode-only)<>
 
 
