@@ -23,7 +23,7 @@ _<v><i>italics text<><>_<><>
 <col>Escape<><col><c>\\<><><col><c>\\<v>*<><><>
 <col> <>
 <col>Image<><col><c>![]()<><><col><c>![<v>alt-text<>](<v>url<>)<><>
-<col>Link<><col><c>[]()<><><col><c>![<v>label<>](<v>url<>)<><>
+<col>Link<><col><c>[]()<><><col><c>[<v>label<>](<v>url<>)<><>
 <col> <>
 <col>Headings<><col><c>#
 \##
@@ -93,7 +93,7 @@ Indent with a TAB or 4 spaces.
 
 Create a quoted block with <c>><>.
 @
-@ Code
+@ >, >>
 
 
 
@@ -108,6 +108,8 @@ Unchecked:
 <cb>[ ]<>
 
 Unchecked - Needs space between [ ]
+@
+@ []
 
 
 
@@ -166,7 +168,7 @@ Inserts a link to your markdown.
 
 Numbers before the '.' do not need to be sequential or in order.
 @
-@ numbered bullet points, bullets
+@ numbered bullet points, bullets, 1., 2.
 
 
 
@@ -180,7 +182,7 @@ Numbers before the '.' do not need to be sequential or in order.
 
 Use <c>*<> or <c>-<> and a space at the start of the line.
 @
-@ Bullet points
+@ Bullet points, *, -
 
 
 
@@ -267,7 +269,52 @@ Surround with Double ~
 
 
 
+#### Table - Center
+
+<cb>| <v>heading<> | <v>heading<> |
+| :-----: | :-----: |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+#### Table - Left Justify
+
+<cb>| <v>heading<> | <v>heading<> |
+| :------ | :------ |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+#### Table - Right Justify
+
+<cb>| <v>heading<> | <v>heading<> |
+| ------: | ------: |
+| <v>data<>    | <v>data<>    |
+| <v>data<>    | <v>data<>    |<>
+
+
+
+# Common Markdown
+
+
+### Common Markdown - Official
+
+<l>https://commonmark.org/<>
+
+@
+@ specifications, specs
+
+
 # Github 
+
+
+### Github - Official
+
+<l>https://github.github.com/gfm/<>
+@
+@ specifications, specs
 
 
 ### Github - Light Theme
@@ -280,4 +327,34 @@ Surround with Double ~
 
 <cb>![GitHub Dark](https://github.com/github-dark.png#gh-light-mode-only)<>
 
+
+
+# Reddit
+
+
+
+### Reddit - Markdown SpeedSheet
+
+<l>reddit_markdown<>
+
+
+
+### Reddit - Official
+
+<l>https://www.reddit.com/wiki/markdown<>
+@
+@ specifications, specs
+
+
+
+# Stack Overflow
+
+
+### Stack - Official
+
+<l>https://stackoverflow.com/editing-help<>
+
+<l>https://stackoverflow.com/help/formatting<>
+@
+@ specifications, specs
 
