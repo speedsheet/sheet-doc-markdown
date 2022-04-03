@@ -296,7 +296,11 @@ Surround with Double ~
 
 
 
-# Common Markdown
+# Markdown Flavors
+
+
+
+## Common Markdown
 
 
 ### Common Markdown - Official
@@ -307,7 +311,8 @@ Surround with Double ~
 @ specifications, specs
 
 
-# Github 
+
+## Github 
 
 
 ### Github - Official
@@ -329,8 +334,30 @@ Surround with Double ~
 
 
 
-# Reddit
+## MyST / Markedly Structured Text
 
+
+### MyST Official
+<l>https://myst-parser.readthedocs.io/en/latest/<>
+
+
+
+### MyST Syntax
+<l>https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html<>
+
+
+
+### MyST Directives
+<l>https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-directives<>
+
+
+
+### MyST Roles
+<l>https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#syntax-roles<>
+
+
+
+## Reddit
 
 
 ### Reddit - Markdown SpeedSheet
@@ -347,7 +374,51 @@ Surround with Double ~
 
 
 
-# Stack Overflow
+## reStructuredText
+An extensible text format built to support markup syntax in Python docstrings.
+
+It supports directives and roles which allow the format to be extended.
+
+
+
+### reStructuredText - Official
+<l>https://docutils.sourceforge.io/rst.html<>
+
+
+
+### reStructuredText - Quick Reference
+<l>https://docutils.sourceforge.io/docs/user/rst/quickref.html<>
+@
+@ syntax
+
+
+
+### reStructuredText - Specification
+<l>https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html<>
+
+
+
+### Directive
+
+<cb>..<v>directive<>::
+	<v>...<><>
+
+Defined by '..' followed by the directive name and then '::'.
+Indent all content applied to the block on the next lines.
+
+<l https://docutils.sourceforge.io/docs/ref/rst/directives.html>Directive Docs<>
+
+
+
+### Role
+
+<cb>:<v>role<>:`<v>data<>`<>
+
+<l https://docutils.sourceforge.io/docs/ref/rst/directives.html<>Role Docs<>
+
+
+
+## Stack Overflow
 
 
 ### Stack - Official
