@@ -1,8 +1,38 @@
 # <#>Markdown<> SpeedSheet
-<b>Find what you need, faster.<>
+<b>Find it faster.<>
+
+This is an interactive <b>Markdown<> cheat sheet. Markdown is a lightweight text based document format. Use the search to instantly get answers.
 
 
-## Summary
+<table><col><b>Syntax<>
+
+<*><link "?q=syntax+summary">Syntax - Summary<>
+<link "?q=syntax-only">Syntax - Details<><>
+
+<*><link "?q=syntax-only+block">Blocks<>
+<link "?q=syntax-only+check">Check Boxes<>
+<link "?q=syntax-only+code">Code<>
+<link "?q=syntax-only+header">Headers<>
+<link "?q=syntax-only+image">Images<>
+<link "?q=syntax-only+link">Links<>
+<link "?q=syntax-only+list">Lists<>
+<link "?q=syntax-only+table">Tables<>
+<link "?q=syntax-only+text">Text Formats<><><><col>		<><col><b>Special<>
+
+<*><link "?q=syntax-only+escape">Escaping<>
+<link "?q=syntax-only+newline">Newline<><>
+
+<b>Mardown Flavors<>
+
+<*><link "?q=flavor+common">Common Markdown<>
+<link "?q=flavor+github">Github<>
+<link "?q=flavor+myst">MyST<>
+<link "?q=flavor+reddit">Reddit<>
+<link "?q=flavor+restructuredtext">reStructuredText<>
+<link "?q=flavor+stack overflow">Stack Overflow<><><><>
+
+
+# Syntax Summary
 
 <table><col>Bold		<><col><c>** **
 __ __		<><><col><c>**<v><b>bold text<><>**
@@ -58,9 +88,11 @@ _<v><i>italics text<><>_<><>
 
 
 # Syntax
+@
+@ syntax-only
 
 
-### Block - Code Block
+### Block - Code Block (Back Ticks)
 
 <cb>```
 <v>Code<>
@@ -73,14 +105,14 @@ Create a code block with a triple back tick (`).
 
 
 
-### Block - Panel
+### Block - Code Block (Indent)
 
 <cb>	<v>Tabbed Text In Panel<><>
 
 
 Indent with a TAB or 4 spaces.
 @
-@ Code
+@ indented
 
 
 
@@ -297,10 +329,14 @@ Surround with Double ~
 
 
 # Markdown Flavors
+@
+@ flavours, flavor-only, flavors-only, flavour-only, flavours-only
 
 
 
 ## Common Markdown
+@
+@ common-only, common-markdown-only
 
 
 ### Common Markdown - Official
@@ -312,7 +348,9 @@ Surround with Double ~
 
 
 
-## Github 
+## Github
+@
+@ github-only
 
 
 ### Github - Official
@@ -335,6 +373,8 @@ Surround with Double ~
 
 
 ## MyST / Markedly Structured Text
+@
+@ myst-only
 
 
 ### MyST Official
@@ -358,6 +398,8 @@ Surround with Double ~
 
 
 ## Reddit
+@
+@ reddit-only
 
 
 ### Reddit - Markdown SpeedSheet
@@ -378,6 +420,8 @@ Surround with Double ~
 An extensible text format built to support markup syntax in Python docstrings.
 
 It supports directives and roles which allow the format to be extended.
+@
+@ restructuredtext-only, restructured-only
 
 
 
@@ -419,6 +463,8 @@ Indent all content applied to the block on the next lines.
 
 
 ## Stack Overflow
+@
+@ stack-only, stack-overflow-only
 
 
 ### Stack - Official
