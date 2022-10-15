@@ -29,7 +29,12 @@ This is an interactive <b>Markdown<> cheat sheet. Markdown is a lightweight text
 <link "?q=flavor+myst">MyST<>
 <link "?q=flavor+reddit">Reddit<>
 <link "?q=flavor+restructuredtext">reStructuredText<>
-<link "?q=flavor+stack overflow">Stack Overflow<><><><>
+<link "?q=flavor+stack overflow">Stack Overflow<><>
+
+<b>Related Sheets<>
+
+<*><l "reddit_markdown">Reddit Markdown<>
+<l "restructuredtext">reStructuredText<><><><>
 
 
 # Syntax Summary
@@ -404,7 +409,7 @@ Surround with Double ~
 
 ### Reddit - Markdown SpeedSheet
 
-<l>reddit_markdown<>
+<l "reddit_markdown">Reddit Markdown<>
 
 
 
@@ -422,6 +427,11 @@ An extensible text format built to support markup syntax in Python docstrings.
 It supports directives and roles which allow the format to be extended.
 @
 @ restructuredtext-only, restructured-only
+
+
+
+### reStructuredText - SpeedSheet
+<l "restructuredtext">reStructuredText<>
 
 
 
