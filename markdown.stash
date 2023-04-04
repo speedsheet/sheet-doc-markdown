@@ -43,9 +43,9 @@ This is an interactive <b>Markdown<> cheat sheet. Markdown is a lightweight text
 __ __		<><><col><c>**<v><b>bold text<><>**
 __<v><b>bold text<><>__<><>
 <col> <>
-<col>Italics		<><col><c>* *
-_ _		<><><col><c>*<v><i>italics text<><>*
-_<v><i>italics text<><>_<><>
+<col>Italics		<><col><c>_ _
+* *		<><><col><c>_<v><i>italics text<><>_
+*<v><i>italics text<><>*<><>
 <col> <>
 <col>Strikethrough		<><col><c>~~ ~~<><><col><c>~~<v><->strikethrough<><>~~<><>
 <col> <>
@@ -56,9 +56,13 @@ _<v><i>italics text<><>_<><>
 [x] Checked<><>
 <col> <>
 <col>Escape<><col><c>\\<><><col><c>\\<v>*<><><>
+<col>Newline<><col><c>\\<><><col><c>\\<><>
 <col> <>
 <col>Image<><col><c>![]()<><><col><c>![<v>alt-text<>](<v>url<>)<><>
-<col>Link<><col><c>[]()<><><col><c>[<v>label<>](<v>url<>)<><>
+<col> <>
+<col>Link<><col><c>[]
+[]()<><><col><c>[<v>url<>]
+[<v>label<>](<v>url<>)<><>
 <col> <>
 <col>Headings<><col><c>#
 \##
@@ -106,7 +110,7 @@ _<v><i>italics text<><>_<><>
 
 Create a code block with a triple back tick (`).
 @
-@ Code
+@ Code, ```
 
 
 
@@ -146,7 +150,7 @@ Unchecked:
 
 Unchecked - Needs space between [ ]
 @
-@ []
+@ [], [x]
 
 
 
@@ -166,7 +170,8 @@ Use <c>#<> to <c>######<>
 <cb>##### <v>H5 Header<><>
 
 <cb>###### <v>H6 Header<><>
-
+@
+@ \#, \######
 
 
 
@@ -193,7 +198,8 @@ Labeled Link:
 
 Inserts a link to your markdown.
 @
-@ url, web address, link, []()
+@ url, web address, link, http, https, a href
+@ [](), []
 
 
 
@@ -205,7 +211,7 @@ Inserts a link to your markdown.
 
 Numbers before the '.' do not need to be sequential or in order.
 @
-@ numbered bullet points, bullets, 1., 2.
+@ numbered bullet points, bullets, 1., 2., 3.
 
 
 
@@ -219,7 +225,7 @@ Numbers before the '.' do not need to be sequential or in order.
 
 Use <c>*<> or <c>-<> and a space at the start of the line.
 @
-@ Bullet points, *, -
+@ Bullet points, *, -, +
 
 
 
@@ -235,20 +241,46 @@ Use <c>*<> or <c>-<> and a space at the start of the line.
 
 Indent with a tab or 4 spaces.
 @
-@ Bullet points, numbered, unordered, ordered
+@ Bullet points, numbered, unordered, ordered, 1., 2., *
 
 
 
 ### Newline
 
-<cb><v>Line 1 
-Line 2<><>
+<cb><v>Line 1<>\\
+<v>Line 2<><>
+
+Add a backslash to move to the next line.
+
+
+Example:
+
+<cb>Insert 2 Blank Lines\\
+\\
+\\
+2 Lines Down<>
+
+Displays:
+
+<cb>Insert 2 Blank Lines
+
+
+2 Lines Down<>
+@
+@ new line, line break, \\, backslash, skip
+
+
+
+### Newline - Skip To Next Line
+
+<cb><v>Line 1<><m>  <>
+<v>Line 2<><>
 
 <card><v>Line 1<> + 2 Spaces + Newline + <v>Line 2<><>
 
 Add double space at end of line 1 ('  ').
 @
-@ new line
+@ new line, line break
 
 
 
@@ -258,6 +290,8 @@ Add double space at end of line 1 ('  ').
 
 <c>\\*<>		Escape *
 <c>\\_<>		Escape _
+@
+@ \, \\, escaped
 
 
 
@@ -268,6 +302,8 @@ Add double space at end of line 1 ('  ').
 __<v>Bold<>__<>
 
 Surround text with a double asterisk (**) or double underscore (__).
+@
+@ **, __
 
 
 
@@ -276,6 +312,8 @@ Surround text with a double asterisk (**) or double underscore (__).
 <cb>`<v>This_is_code<>`<>
 
 Surround with Back Quote `
+@
+@ ``, `
 
 
 
@@ -286,6 +324,8 @@ Surround with Back Quote `
 *<v>In Italics<>*<>
 
 Surround with a single underscore (_) or asterisk (*).
+@
+@ _, *
 
 
 
@@ -294,6 +334,8 @@ Surround with a single underscore (_) or asterisk (*).
 <cb>~~<v>Strike Through<>~~<>
 
 Surround with Double ~
+@
+@ ~, ~~
 
 
 
@@ -303,6 +345,8 @@ Surround with Double ~
 | ------- | ------- |
 | <v>data<>    | <v>data<>    |
 | <v>data<>    | <v>data<>    |<>
+@
+@ |, ----
 
 
 
@@ -312,6 +356,8 @@ Surround with Double ~
 | :-----: | :-----: |
 | <v>data<>    | <v>data<>    |
 | <v>data<>    | <v>data<>    |<>
+@
+@ :-, -:, :-:, :----:
 
 
 
@@ -321,6 +367,8 @@ Surround with Double ~
 | :------ | :------ |
 | <v>data<>    | <v>data<>    |
 | <v>data<>    | <v>data<>    |<>
+@
+@ :-, :----
 
 
 
@@ -330,6 +378,8 @@ Surround with Double ~
 | ------: | ------: |
 | <v>data<>    | <v>data<>    |
 | <v>data<>    | <v>data<>    |<>
+@
+@ -:, --:, ---:, ----:
 
 
 
